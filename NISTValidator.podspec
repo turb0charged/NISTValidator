@@ -80,7 +80,7 @@ Pod::Spec.new do |spec|
 
   # spec.source       = { :git => "http://EXAMPLE/NISTValidator.git", :tag => "#{spec.version}" }
   spec.source = { :git => 'https://github.com/turb0charged/NISTValidator.git', :tag => "1.0.0" }
-  spec.source_files = "NISTValidator", "CommonPasswordList.txt"
+  spec.source_files = "NISTValidator"
   spec.ios.source_files = 'NISTValidator/Extensions/*.swift'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  # spec.resource  = "icon.png"
+  spec.resource  = "NISTValidator/CommonPasswordList.txt"
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
