@@ -104,7 +104,7 @@ Pod::Spec.new do |spec|
   #  non-essential files like tests, examples and documentation.
   #
 
-  spec.resource  = "NISTValidator/CommonPasswordList.txt"
+  spec.resources  = "NISTValidator/CommonPasswordList.txt"
   # spec.ios.resource_bundle = { 'NISTValidator' => 'NISTValidator/CommonPasswordList.txt' }
   # spec.resources = "Resources/*.png"
 
