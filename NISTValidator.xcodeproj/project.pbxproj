@@ -11,9 +11,9 @@
 		F4A177592231F0D00056DE89 /* NISTValidator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A1774F2231F0D00056DE89 /* NISTValidator.framework */; };
 		F4A1775E2231F0D00056DE89 /* NISTValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1775D2231F0D00056DE89 /* NISTValidatorTests.swift */; };
 		F4A177602231F0D00056DE89 /* NISTValidator.h in Headers */ = {isa = PBXBuildFile; fileRef = F4A177522231F0D00056DE89 /* NISTValidator.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F4A1776B223320590056DE89 /* StringProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1776A223320590056DE89 /* StringProtocolExtension.swift */; };
 		F4A1776D223449360056DE89 /* NISTValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A1776C223449360056DE89 /* NISTValidator.swift */; };
 		F4AA8C3522359975006B6E33 /* CommonPasswordList.txt in Resources */ = {isa = PBXBuildFile; fileRef = F441D10522344B81004DE7FC /* CommonPasswordList.txt */; };
+		F4AA8C3F2235BC52006B6E33 /* StringProtocolExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4AA8C3E2235BC52006B6E33 /* StringProtocolExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,8 +34,8 @@
 		F4A177582231F0D00056DE89 /* NISTValidatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NISTValidatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A1775D2231F0D00056DE89 /* NISTValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NISTValidatorTests.swift; sourceTree = "<group>"; };
 		F4A1775F2231F0D00056DE89 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F4A1776A223320590056DE89 /* StringProtocolExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringProtocolExtension.swift; sourceTree = "<group>"; };
 		F4A1776C223449360056DE89 /* NISTValidator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NISTValidator.swift; sourceTree = "<group>"; };
+		F4AA8C3E2235BC52006B6E33 /* StringProtocolExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringProtocolExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,8 @@
 		F4A177512231F0D00056DE89 /* NISTValidator */ = {
 			isa = PBXGroup;
 			children = (
-				F441D10522344B81004DE7FC /* CommonPasswordList.txt */,
-				F4A177692233202B0056DE89 /* Extentions */,
+				F4AA8C402235BC6A006B6E33 /* Resources */,
+				F4AA8C3D2235BC52006B6E33 /* Extensions */,
 				F4A177522231F0D00056DE89 /* NISTValidator.h */,
 				F4A177532231F0D00056DE89 /* Info.plist */,
 				F4A1776C223449360056DE89 /* NISTValidator.swift */,
@@ -96,12 +96,20 @@
 			path = NISTValidatorTests;
 			sourceTree = "<group>";
 		};
-		F4A177692233202B0056DE89 /* Extentions */ = {
+		F4AA8C3D2235BC52006B6E33 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F4A1776A223320590056DE89 /* StringProtocolExtension.swift */,
+				F4AA8C3E2235BC52006B6E33 /* StringProtocolExtension.swift */,
 			);
-			path = Extentions;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F4AA8C402235BC6A006B6E33 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F441D10522344B81004DE7FC /* CommonPasswordList.txt */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A1776D223449360056DE89 /* NISTValidator.swift in Sources */,
-				F4A1776B223320590056DE89 /* StringProtocolExtension.swift in Sources */,
+				F4AA8C3F2235BC52006B6E33 /* StringProtocolExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

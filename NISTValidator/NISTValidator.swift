@@ -34,11 +34,17 @@ open class NISTValidator {
     }
     
     static func retrieveCommonPasswords(useCustomList: Bool) -> String? {
-        var bundle = Bundle(identifier: "hector.codes.NISTValidator")
+        var bundle = Bundle(for: self)//Bundle(identifier: "hector.codes.NISTValidator")
         if useCustomList{
-             bundle = Bundle.main}
+            bundle = Bundle.main} else {
+            if let bundleURL = bundle.url(forResource: "NISTValidator", withExtension: "bundle") {
+                if let testBundle = Bundle.init(url: bundleURL){
+                    bundle = testBundle
+                }
+            }
+        }
         
-        if let filepath = bundle?.path(forResource: "CommonPasswordList", ofType: "txt") {  //set the filepath to the common password list
+        if let filepath = bundle.path(forResource: "CommonPasswordList", ofType: "txt") {  //set the filepath to the common password list
             do {
                 let contents = try String(contentsOfFile: filepath)  //set the contents of the password list to a string
                 return contents

@@ -105,6 +105,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.resource  = "NISTValidator/CommonPasswordList.txt"
+  spec.ios.resource_bundle = { 'NISTValidator' => 'NISTValidator/CommonPasswordList.txt' }
   # spec.resources = "Resources/*.png"
 
   # spec.preserve_paths = "FilesToSave", "MoreFilesToSave"
