@@ -81,6 +81,7 @@ Pod::Spec.new do |spec|
   # spec.source       = { :git => "http://EXAMPLE/NISTValidator.git", :tag => "#{spec.version}" }
   spec.source = { :git => 'https://github.com/turb0charged/NISTValidator.git', :tag => "1.0.0" }
   spec.source_files = "NISTValidator"
+  spec.source_files = "CommonPasswordList"
   spec.ios.source_files = 'NISTValidator/Extensions/*.swift'
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
