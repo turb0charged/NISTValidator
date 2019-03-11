@@ -22,6 +22,13 @@ use_frameworks!
 pod 'NISTValidator', :git => 'https://github.com/turb0charged/NISTValidator.git'
 ```
 
+#### Manually
+Add the NISTValidator.xcodeproj to your project as a subproject. Make sure it is shown in  the Embedded Binaries and Linked Frameworks and Libraries sections of the General tab of your project editor. Declare imports and you're good to go.
+
+```swift 
+import NISTValidator
+```
+
 ## Usage Example
 
 ```swift
