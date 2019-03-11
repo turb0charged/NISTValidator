@@ -8,8 +8,8 @@
 
 ## Requirements
 
--iOS 10+
--Xcode 10.1
+- iOS 10+
+- Xcode 10.1
 
 ## Instalation 
 
