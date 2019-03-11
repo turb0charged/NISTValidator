@@ -11,9 +11,9 @@
 -iOS 10+
 -Xcode 10.1
 
-##Instalation 
+## Instalation 
 
-###CocoaPods
+#### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
 
 ```ruby 
