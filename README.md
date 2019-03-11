@@ -11,7 +11,7 @@
 - iOS 10+
 - Xcode 10.1
 
-## Instalation 
+## Installation 
 
 #### CocoaPods
 You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by adding it to your `Podfile`:
@@ -19,7 +19,7 @@ You can use [CocoaPods](http://cocoapods.org/) to install `YourLibrary` by addin
 ```ruby 
 platform: ios, '10.0'
 use_frameworks!
-pod 'NISTValidator', :path => '/Users/turb0/Documents/JobSearch/TheInfatuation/NISTValidator/repo/NISTValidator'
+pod 'NISTValidator', :git => 'https://github.com/turb0charged/NISTValidator.git'
 ```
 
 ## Usage Example
